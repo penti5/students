@@ -1,0 +1,29 @@
+{% load staticfiles %}
+<html>
+<head>
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" >
+</head>
+<body>
+<h3>
+    {{ mess }}</h3>
+<form action="{% url 'save' %}" method="post">
+    {% csrf_token %}
+<div class="box">
+    <br>
+    <h3>Student registration form</h3>
+    <h6 class="date">{% now "SHORT_DATE_FORMAT" %}</h6>
+<input type="text" name="name" placeholder="enter your name" required><br><br>
+    <input type="email" placeholder="email" name="email" required><br><br>
+<input type="password" name="pass" placeholder="enter password" required><br><br>
+<button type="submit">submit</button><br><br>
+    <a href="{% url 'login' %}" class="log">Login here</a><br><br>
+</div>
+
+{% if data %}
+    <marquee><h2>{{ l }} Students are enrolled.</h2></marquee>
+    {% else %}
+    <h2>No student enrolled.</h2>
+{% endif %}
+</form>
+</body>
+</html>

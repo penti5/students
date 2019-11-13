@@ -1,0 +1,40 @@
+.box{
+    border: 0;
+    width: 300px;
+    height: auto;
+    box-shadow: lightgray;
+    box-shadow: 2px 2px;
+    align-items: center;
+    alignment: center;
+    background-color:darkseagreen;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 40%;
+
+}
+.box input{
+    width: 200px;
+    height: 30px;
+    border-bottom: 15px;
+    border-bottom-color: black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 2px;
+}
+.box button{
+   border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+}
+.date{
+    margin-left: 160px;
+}
+
+.body h3{
+    color:forestgreen;
+}
+.log{
+     color: black; font-size : 18px;
+}
